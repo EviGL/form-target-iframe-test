@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+I'm a frame!
+<script>
+    console.log('inner name before',window.name);
+    var name = "a";
+    console.log('inner name after',name);
+    setTimeout(function(){document.body.innerText = 'loaded';},1000);
+</script>
+</body>
+</html>

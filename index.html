@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form action="frame.html" target="frame1"><input type="submit"></form>
+<iframe name="frame1" src="frame.html"></iframe>
+<br>
+
+<form action="frame2.html" target="frame2"><input type="submit"></form>
+<iframe name="frame2" src="frame2.html"></iframe>
+<script>console.log("outer name: ",document.querySelectorAll('iframe')[1].name);</script>
+</body>
+</html>
